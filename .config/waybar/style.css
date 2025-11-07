@@ -1,0 +1,153 @@
+.module {
+    margin: 0 0px;
+    padding: 0px 0px;
+}
+
+#waybar {
+    border: 2px solid #7b899d;
+    color: #273549;
+    background-color: #15191f;
+    font-family: "monospace";
+    font-size: 13px;
+
+    padding: 0px 5px;
+}
+
+
+
+
+
+
+#workspaces {
+    color: #dedfe5;
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    transition: color 120ms ease;
+
+    padding: 0px 0px;
+}
+#workspaces button {
+    color: #dedfe5;
+    background-color: #1d2839;
+    border: none;
+    transition: background-color 120ms ease, color 120ms ease;
+    border-radius: 0px;
+}
+#workspaces button:hover {
+    background-color: #7b899d;
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+
+
+
+
+
+
+#clock {
+    padding: 0px 5px;
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
+}
+
+
+
+
+
+
+#custom-weather {
+    border: 2px solid #7b899d;
+    color: #dedfe5;
+    background-color: #1d2839;
+
+    padding: 0px 5px;
+}
+
+#cpu {
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
+
+    padding: 0px 5px;
+}
+
+#custom-gpu {
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
+
+    padding: 0px 5px;
+}
+
+#memory {
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
+
+    padding: 0px 5px;
+}
+
+
+
+
+
+
+
+
+#network {
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
+
+    padding: 0px 5px;
+}
+
+#custom-RW {
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
+
+    padding: 0px 5px;
+}
+
+#custom-LOCKIN {
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
+
+    padding: 0px 5px;
+}
+
+
+
+
+
+
+
+
+#pulseaudio {
+    border: 2px solid #7b899d;
+    padding-top: 4px;
+    padding-bottom: 0;
+    color: #dedfe5;
+    background-color: #1d2839;
+
+    padding-left: 5px
+}
+
+
+
+
+
+* { 
+min-height: 0;
+}
