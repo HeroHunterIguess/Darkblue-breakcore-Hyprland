@@ -1,0 +1,73 @@
+{
+  "layer": "bot",
+  "spacing": -2,
+  "height": 18,
+  "margin-bottom": 0,
+  "margin-top": 4,
+  "margin-left": 4,
+  "margin-right": 4,
+  "position": "top",
+  "modules-left": ["hyprland/workspaces", "network", "custom/RW", "custom/LOCKIN"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/weather", "pulseaudio", "cpu", "custom/gpu", "memory"],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "hyprctl dispatch workspace {name}"
+  },
+
+  "custom/applauncher": {
+    "format": "o",
+    "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 15",
+    "tooltip": true
+  },
+
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "tooltip-format": "{:%A, %d %B %Y}",
+    "interval": 60
+  },
+
+  "custom/weather": {
+      "format": "{}",
+      "exec": "~/.config/waybar/scripts/weather.sh",
+      "interval": 60,
+      "tooltip": false
+  },
+
+  "cpu": {
+    "format": "CPU: {usage}%"
+  },
+
+  "custom/gpu": {
+    "exec": "cat /sys/class/hwmon/hwmon7/device/gpu_busy_percent",
+    "format": "GPU: {}%",
+    "return-type": "",
+    "interval": 1
+  },
+
+  "memory": {
+    "format": "RAM: {}%"
+  },
+
+  "network": {
+    "format": "{ifname}",
+    "format-disconnected": "⚠ Disconnected",
+    "format-wifi": "ᯤ {signalStrength}%"
+  },
+
+  "custom/RW": {
+    "format": "⚠RW⚠",
+    "on-click": "sudo /home/herohunter/Everything/scripts/driverscript.sh"
+  },
+
+  "custom/LOCKIN": {
+    "format": "LOCK IN",
+    "on-click": "bash -c '/home/herohunter/Everything/scripts/togglelockin.sh'"
+  },
+
+  "pulseaudio": {
+    "format": "🕪 {volume}% ",
+    "format-muted": "MUTED"
+  }
+}
