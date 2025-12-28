@@ -20,7 +20,7 @@ color: #e8f1ea;
 #entry {
 background-color: #171b22;
 border: 2px solid #91a1b8;
-padding: 3px;
+padding: 4px;
 font-family: "monospace";
 font-size: 15px;
 color: #e8f1ea;
@@ -34,7 +34,7 @@ color: #e8e9ee;
 
 /* Scroll container */
 #scroll {
-margin-top: 5px;
+margin-top: 0px;
 }
 
 /* Text alignment */
