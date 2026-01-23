@@ -34,14 +34,14 @@
     background = "#1d2839cc"
     foreground = "dedfe5"
     frame_color = "7b899dcc"
-    timeout = 8
+    timeout = 6
 
 [urgency_normal]
     background = "#1d2839cc"
     foreground = "dedfe5"
     frame_color = "#7b899dcc"
     timeout = 10
-    override_pause_level = 30
+    override_pause_level = 10
 
 [urgency_critical]
     background = "#1d2839cc"
@@ -49,4 +49,4 @@
     frame_color = "afc1da"
     frame_color = "7b899dcc"
     timeout = 12
-    override_pause_level = 60
+    override_pause_level = 10
