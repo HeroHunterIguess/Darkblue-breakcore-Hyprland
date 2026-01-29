@@ -57,7 +57,7 @@
   },
 
   "custom/RW": {
-    "format": "⚠RW⚠",
+    "format": "ᯤ⚠",
     "on-click": "sudo /home/herohunter/Everything/scripts/driverscript.sh"
   },
 
