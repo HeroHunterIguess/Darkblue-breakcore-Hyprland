@@ -1,3 +1,4 @@
+/* overall window */
 window {
     background-color: #171b22;
     border: 2px solid #91a1b8;
@@ -7,7 +8,7 @@ window {
     color: #e8f1ea;
 }
 
-/* Input box */
+/* input box */
 #input {
 background-color: #171b22;
 border: 2px solid #91a1b8;
@@ -17,6 +18,7 @@ font-size: 17px;
 color: #e8f1ea;
 }
 
+/* each item in the list */
 #entry {
 background-color: #171b22;
 border: 2px solid #91a1b8;
@@ -26,23 +28,23 @@ font-size: 15px;
 color: #e8f1ea;
 }
 
-/* Selected entry */
+/* selected entry */
 #entry:selected {
 background-color: #273549;
 color: #e8e9ee;
 }
 
-/* Scroll container */
+/* scroll container */
 #scroll {
 margin-top: 0px;
 }
 
-/* Text alignment */
+/* text alignment */
 #text {
 padding-left: 6px;
 }
 
-/* Hide scrollbar completely */
+/* hide scrollbar completely */
 scrollbar,
 scrollbar * {
     all: unset;
@@ -52,7 +54,7 @@ scrollbar * {
     opacity: 0;
 }
 
-/* Kill green dot tickmarks if GTK injects them */
+/* get rid of green dot ticks if gtk injects them */
 undershoot,
 .fine-ticks,
 tickmarks,
@@ -65,7 +67,7 @@ tickmark {
     opacity: 0 !important;
 }
 
-/* Prevent outlines on focus */
+/* prevent outlines on focus */
 window:focus,
 #entry:focus,
 #input:focus {
