@@ -3,7 +3,7 @@
     font = Monospace 10
     monitor = 1
     origin = top-right
-    offset = (15, 40)
+    offset = (12, 12)
     width = 320
     height = (40, 100)
     corner_radius = 0
@@ -47,7 +47,6 @@
 [urgency_critical]
     background = "#1d2839cc"
     foreground = "dedfe5"
-    frame_color = "afc1da"
     frame_color = "7b899dcc"
     timeout = 12
     override_pause_level = 10
