@@ -5,5 +5,6 @@ I think this repo is missing some stuff, and other things may only work on my co
 This does not include my GTK-3 theme.
 
 You can see an example image of how this rice might look in /showcase.png.
+This showcase image may be partially outdated, but still reflects the general appearance of the rice.
 
 This has some weird things, like the LOCK IN button and wifi reset button, which only apply to me and are probably useless for others.
