@@ -7,7 +7,7 @@
   "margin-left": 4,
   "margin-right": 4,
   "position": "top",
-  "modules-left": ["hyprland/workspaces", "network", "custom/RW", "custom/LOCKIN"],
+  "modules-left": ["hyprland/workspaces", "network", "custom/RW", "custom/LOCKIN", "custom/notification_script"],
   "modules-center": ["clock"],
   "modules-right": ["custom/weather", "pulseaudio", "cpu", "custom/gpu", "memory"],
 
@@ -16,9 +16,15 @@
     "on-click": "hyprctl dispatch workspace {name}"
   },
 
+  "custom/notification_script": {
+    "format": " {}",
+    "exec": "~/Everything/scripts/toggle-notifications.sh",
+    "interval": 1
+  },
+
   "custom/applauncher": {
     "format": "o",
-    "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 15",
+    "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun",
     "tooltip": true
   },
 
@@ -30,8 +36,8 @@
 
   "custom/weather": {
       "format": "{}",
-      "exec": "~/.config/waybar/scripts/weather.sh",
-      "interval": 60,
+      "exec": "~/Everything/scripts/weather.sh",
+      "interval": 120,
       "tooltip": false
   },
 
@@ -58,7 +64,9 @@
 
   "custom/RW": {
     "format": "ᯤ⚠",
-    "on-click": "sudo /home/herohunter/Everything/scripts/driverscript.sh"
+    "on-click": "sudo /home/herohunter/Everything/scripts/driverscript.sh",
+    "tooltip": true,
+    "tooltip-format": "Reset wifi drivers"
   },
 
   "custom/LOCKIN": {
