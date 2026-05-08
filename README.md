@@ -8,3 +8,5 @@ You can see an example image of how this rice might look in /showcase.png.
 This showcase image may be partially outdated, but still reflects the general appearance of the rice.
 
 This has some weird things, like the LOCK IN button and wifi reset button, which only apply to me and are probably useless for others.
+
+Every config that references a script in /scripts is within ~/Everything/scripts on my computer. If you want to use some of these scripts then you may need to adjust the location of the script being called in config files. 
