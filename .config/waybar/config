@@ -54,7 +54,7 @@
 
   "custom/gpu_temp": {
     "exec": "sensors -u | grep -A 1 'junction:' | grep 'temp2_input' | awk '{print $2}' | cut -c1-2",
-    "format": "GPU {}°C",
+    "format": "GPU: {}°C",
     "interval": 1
   },
 
