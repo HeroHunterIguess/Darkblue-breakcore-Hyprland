@@ -1,15 +1,16 @@
 #!/bin/bash
 
 current_state=0
-states=("##   " " ##  " "  ## " "   ##" "#   #")
+states=("##    " " ##   " "  ##  " "   ## " "    ##" "#    #")
 
 while true; do
-        echo "${states[current_state]}"
-        ((current_state++))
+	echo "${states[current_state]}"
+	((current_state++))
 
-        if (( current_state > 4 )); then
-                current_state=0
-        fi
+	if (( current_state > ((${#states[@]}-1)) )); then
+		current_state=0
+	fi
 
-        sleep 0.2
+	sleep 0.2
 done
+
