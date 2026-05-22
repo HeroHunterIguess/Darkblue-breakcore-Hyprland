@@ -9,5 +9,5 @@ if [ ! -z "$weather" ]; then
     temp=$(echo "$weather" | jq ".main.temp" | cut -d "." -f 1)
     echo "${temp}°F"
 else
-    echo "N/A"
+    echo "No weather data."
 fi
