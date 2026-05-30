@@ -29,7 +29,7 @@
   },
 
   "clock": {
-    "format": "[ {:%I:%M %p} ]",
+    "format": "[ {:%I:%M %p | %m-%d-%Y ]}",
     "tooltip-format": "{:%A, %d %B %Y}",
     "interval": 60
   },
